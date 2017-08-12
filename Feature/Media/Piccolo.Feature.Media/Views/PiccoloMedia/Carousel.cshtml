@@ -1,0 +1,16 @@
+﻿@model Piccolo.Feature.Media.Models.CarouselViewModel
+    @{
+    Layout = null;
+}
+
+<div class="flexslider">
+    <ul class="slides">
+@foreach (var carouselSlide in Model.CarouselSlides)
+{
+    <li><a href="gallery-single.htm">@carouselSlide.Image</a></li>
+}
+       
+     
+
+    </ul>
+</div>
