@@ -1,0 +1,38 @@
+﻿@using Piccolo.Project.Web.Models
+@model IArticle
+
+@{
+    Layout = null;
+}
+
+<!-- Begin Headline --> <div class="row headline">
+
+    <!-- Slider Carousel
+    ================================================== -->
+    @*Carousel*@
+    <div class="span8">
+        @Html.Sitecore().Placeholder("span8")
+    </div>
+
+    <!-- Headline Text
+    ================================================== -->
+    <div class="span4">
+        @*@Html.Sitecore().Placeholder("span8")*@
+        <h3>
+            @Model.Title
+
+        </h3>
+        <p class="lead">@Model.SubTitle</p>
+        <p>@Model.Description</p>
+        <a href="#"><i class="icon-plus-sign"></i>Read More</a>
+    </div>
+</div><!-- End Headline -->
+
+
+
+<div class="row gallery-row">
+    <!-- Begin Gallery Row -->
+    @Html.Sitecore().Placeholder("span12")
+
+
+</div><!-- End Gallery Row -->

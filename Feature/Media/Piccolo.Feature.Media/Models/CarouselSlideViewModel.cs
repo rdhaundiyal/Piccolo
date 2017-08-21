@@ -23,6 +23,7 @@ namespace Piccolo.Feature.Media.Models
         private MvcHtmlString GetFieldValue(string fieldName)
         {
             return new MvcHtmlString(Sitecore.Web.UI.WebControls.FieldRenderer.Render(Item, fieldName));
+      
         }
     }
 }

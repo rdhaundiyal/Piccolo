@@ -1,4 +1,6 @@
-﻿@model Piccolo.Feature.Media.Models.CarouselViewModel
+﻿@using Glass.Mapper.Sc
+@using Glass.Mapper.Sc.Web.Mvc
+@model Piccolo.Feature.Media.Models.CarouselViewModel
     @{
     Layout = null;
 }
@@ -7,7 +9,7 @@
     <ul class="slides">
 @foreach (var carouselSlide in Model.CarouselSlides)
 {
-    <li><a href="gallery-single.htm">@carouselSlide.Image</a></li>
+    <li><a href="gallery-single.htm"> @Html.Glass().RenderImage(@carouselSlide,k=>k.Image)</a></li>
 }
        
      

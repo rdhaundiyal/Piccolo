@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Glass.Mapper.Sc;
+using Piccolo.Feature.Gallery.Models;
 
 namespace Piccolo.Feature.Gallery.Controllers
 {
@@ -11,7 +13,10 @@ namespace Piccolo.Feature.Gallery.Controllers
         // GET: Gallery
         public ActionResult List()
         {
-            return View();
+            var item = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item;
+            var context = new SitecoreContext();
+            var result = context.GetItem<GalleryListViewModel>(item.Paths.Path);
+            return View("List", result);
         }
     }
 }

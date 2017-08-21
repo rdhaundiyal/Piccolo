@@ -1,5 +1,4 @@
 ﻿using Piccolo.Foundation.Configuration;
-using Piccolo.Foundation.Configuration.Models;
 using Sitecore.Data.Items;
 using System;
 using System.Collections.Generic;
@@ -27,30 +26,30 @@ namespace Piccolo.Feature.Navigation.Controllers
         {
             return PartialView();
         }
-        public ActionResult SitesNavigation()
-        {
-            Item contentNode = SiteConfiguration.GetHomeItem().Parent;
-            List<GenericLink> sites = new List<GenericLink>();
+        //public ActionResult SitesNavigation()
+        //{
+        //    Item contentNode = SiteConfiguration.GetHomeItem().Parent;
+        //    List<GenericLink> sites = new List<GenericLink>();
 
-            foreach (Item site in contentNode.Children.ToArray().Where(item => SiteConfiguration.DoesItemExistInCurrentLanguage(item)))
-            {
-                if (site["Show in Sites Menu"] == "1") { sites.Add(new GenericLink(site["Site Name"], LinkManager.GetItemUrl(site), false)); }
-            }
+        //    foreach (Item site in contentNode.Children.ToArray().Where(item => SiteConfiguration.DoesItemExistInCurrentLanguage(item)))
+        //    {
+        //        if (site["Show in Sites Menu"] == "1") { sites.Add(new GenericLink(site["Site Name"], LinkManager.GetItemUrl(site), false)); }
+        //    }
 
-            if (SiteConfiguration.GetExternalSitesItem() != null)
-            {
-                foreach (Item externalsite in SiteConfiguration.GetExternalSitesItem().Children)
-                {
-                    if (SiteConfiguration.DoesItemExistInCurrentLanguage(externalsite))
-                    {
-                        Sitecore.Data.Fields.LinkField lf = externalsite.Fields["Site Link"];
-                        sites.Add(new GenericLink(lf.Text, lf.Url, true));
-                    }
-                }
-            }
+        //    if (SiteConfiguration.GetExternalSitesItem() != null)
+        //    {
+        //        foreach (Item externalsite in SiteConfiguration.GetExternalSitesItem().Children)
+        //        {
+        //            if (SiteConfiguration.DoesItemExistInCurrentLanguage(externalsite))
+        //            {
+        //                Sitecore.Data.Fields.LinkField lf = externalsite.Fields["Site Link"];
+        //                sites.Add(new GenericLink(lf.Text, lf.Url, true));
+        //            }
+        //        }
+        //    }
 
-            // Don't show the drop down unless there are multiple sites
-            return (sites.Count > 1) ? View("TertiaryNavigationPartialSites", sites as IEnumerable<GenericLink>) : null;
-        }
+        //    // Don't show the drop down unless there are multiple sites
+        //    return (sites.Count > 1) ? View("TertiaryNavigationPartialSites", sites as IEnumerable<GenericLink>) : null;
+        //}
     }
 }
