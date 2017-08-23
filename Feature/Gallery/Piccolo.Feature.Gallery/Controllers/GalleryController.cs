@@ -18,5 +18,14 @@ namespace Piccolo.Feature.Gallery.Controllers
             var result = context.GetItem<GalleryListViewModel>(item.Paths.Path);
             return View("List", result);
         }
+
+        public ActionResult Detail()
+        {
+            var context = new SitecoreContext();
+            var result = context.GetCurrentItem<ImageArticle>();
+
+           
+            return View(result);
+        }
     }
 }

@@ -13,7 +13,13 @@ namespace Piccolo.Foundation.Configuration
         {
             return Sitecore.Context.Database.GetItem(String.Format("{0}/Configuration", GetHomeItem().Paths.FullPath));
         }
-        public static Item GetHomeItem()
+        public static bool DoesItemExistInCurrentLanguage(Item i)
+        {
+            // standard way of checking
+            return i.Versions.Count != 0;
+        }
+
+       public static Item GetHomeItem()
         {
             // Since we want to support multi-site for evaluation purposes and do not create site nodes in the site section of 
             // the web.config, we will just go up the tree until we get to the content node.

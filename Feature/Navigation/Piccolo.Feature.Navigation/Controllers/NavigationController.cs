@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Piccolo.Feature.Navigation.Models;
 
 namespace Piccolo.Feature.Navigation.Controllers
 {
@@ -21,6 +22,22 @@ namespace Piccolo.Feature.Navigation.Controllers
             }
             return null;
            
+        }
+
+        public PartialViewResult MainMenu()
+        {
+          var  menuItems = new List<MenuItem>();
+
+            Item homeItem = SiteConfiguration.GetHomeItem();
+            if (homeItem != null)
+            {
+                if (homeItem["Show Item in Menu"] == "1") menuItems.Add(new MenuItem(homeItem));
+                foreach (Item item in homeItem.GetChildren().Where(x => x["Show Item in Menu"].Equals("1") && SiteConfiguration.DoesItemExistInCurrentLanguage(x)))
+                {
+                    menuItems.Add(new MenuItem(item));
+                }
+            }
+            return PartialView(menuItems);
         }
         public ActionResult Footer()
         {

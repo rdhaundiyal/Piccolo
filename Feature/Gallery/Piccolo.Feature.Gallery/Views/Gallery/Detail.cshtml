@@ -1,0 +1,39 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@model Piccolo.Feature.Gallery.Models.ImageArticle
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+
+<div class="row">
+
+    <!-- Gallery Items
+    ================================================== -->
+    <div class="span12 gallery-single">
+
+        <div class="row">
+            <div class="span6">
+           @Html.Glass().RenderImage(Model,k=>k.Image,new { @class = "align-left thumbnail" })     
+            </div>
+            <div class="span6">
+                <h2>@Html.Glass().Editable(Model, k => k.Title)</h2>
+                <p class="lead">@Html.Glass().Editable(Model, k => k.SubTitle)</p>
+                <p>@Html.Glass().Editable(Model, k => k.Description)</p>
+
+                <ul class="project-info">
+                    <li><h6>Date:</h6> @Html.Glass().Editable(Model,k=>k.Date)</li>
+                    <li><h6>Client:</h6> @Html.Glass().Editable(Model, k => k.Client)</li>
+                    <li><h6>Services:</h6> @Html.Glass().Editable(Model, k => k.Services)</li>
+                    <li><h6>Art Director:</h6> @Html.Glass().Editable(Model, k => k.ArtDirector)</li>
+                    <li><h6>Designer:</h6> @Html.Glass().Editable(Model, k => k.Designer)</li>
+                </ul>
+
+                <button class="btn btn-inverse pull-left" type="button">Visit Website</button>
+                <a href="#" class="pull-right"><i class="icon-arrow-left"></i>Back to Gallery</a>
+            </div>
+        </div>
+
+    </div><!-- End gallery-single-->
+
+</div><!-- End container row -->

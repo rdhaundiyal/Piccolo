@@ -21,6 +21,8 @@ namespace Piccolo.Feature.Gallery.Models
            public virtual string Services { get; set; }
            [SitecoreField(FieldName = "Art Director")]
             public virtual string ArtDirector { get; set; }
+       [SitecoreField]
+            public virtual string Designer { get; set; }
           [SitecoreField(FieldType = SitecoreFieldType.Image, FieldName = "Image")]
            public virtual Image Image { get; set; }
 
