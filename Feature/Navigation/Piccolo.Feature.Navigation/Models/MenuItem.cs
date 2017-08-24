@@ -89,8 +89,8 @@ namespace Piccolo.Feature.Navigation.Models
     public static class FieldId
     {
    
-        public static readonly ID MenuTitle = new ID("{{93DF3310-E9FF-435E-B2A7-BF82E26869C3}}");
-        public static readonly ID ShowItemInMenu = new ID("{{9F577BFD-68FA-406D-9C84-F271D2637DCC}");
+        public static readonly ID MenuTitle = new ID("{93DF3310-E9FF-435E-B2A7-BF82E26869C3}");
+        public static readonly ID ShowItemInMenu = new ID("{9F577BFD-68FA-406D-9C84-F271D2637DCC}");
         public static readonly ID ShowItemInFooter = new ID("{F3B1D89A-72DC-4FDD-B845-FFF624CF22C7}");
         public static readonly ID ShowChildrenInMenu = new ID("{5E1CFAEB-2BD3-4501-BEAD-AE02DC63B75F}");
     }

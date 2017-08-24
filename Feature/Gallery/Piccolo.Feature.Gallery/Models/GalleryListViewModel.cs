@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
+using Glass.Mapper.Sc.Fields;
 
 namespace Piccolo.Feature.Gallery.Models
 {
@@ -11,5 +13,11 @@ namespace Piccolo.Feature.Gallery.Models
     {
             [SitecoreField(FieldName = "Selected Image")]
             public IEnumerable<ImageArticle> ImageArticles { get; set; }
+
+            [SitecoreField]
+            public string Title { get; set; }
+            [SitecoreField(FieldType = SitecoreFieldType.GeneralLink, FieldName = "Call To Action")]
+            public Link CallToAction { get; set; } 
+
     }
 }

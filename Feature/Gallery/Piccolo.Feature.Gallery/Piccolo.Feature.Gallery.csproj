@@ -63,6 +63,21 @@
       <HintPath>..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\..\..\Library\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Client">
+      <HintPath>..\..\..\Library\Sitecore.ContentSearch.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>..\..\..\Library\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq.Lucene">
+      <HintPath>..\..\..\Library\Sitecore.ContentSearch.Linq.Lucene.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.LuceneProvider">
+      <HintPath>..\..\..\Library\Sitecore.ContentSearch.LuceneProvider.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\..\Library\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -117,6 +132,7 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <None Include="Properties\PublishProfiles\piccolo.pubxml" />
     <Content Include="Views\Gallery\Detail.cshtml" />
+    <Content Include="Views\Gallery\Search.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -127,7 +143,10 @@
     <Compile Include="Models\GalleryListViewModel.cs" />
     <Compile Include="Models\GlassBase.cs" />
     <Compile Include="Models\ImageArticle.cs" />
+    <Compile Include="Models\Search\BaseSearchItem.cs" />
+    <Compile Include="Models\Search\ImageArticleSearchItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ImageArticleRespository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />

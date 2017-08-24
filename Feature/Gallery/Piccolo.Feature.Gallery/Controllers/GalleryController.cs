@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Glass.Mapper.Sc;
 using Piccolo.Feature.Gallery.Models;
+using Piccolo.Feature.Gallery.Repository;
 
 namespace Piccolo.Feature.Gallery.Controllers
 {
@@ -26,6 +27,13 @@ namespace Piccolo.Feature.Gallery.Controllers
 
            
             return View(result);
+        }
+
+        public ActionResult Search(string searchTerm = "")
+        {
+            var repository=new ImageArticleRespository();
+            var result = repository.GetArticles(searchTerm);
+            return View();
         }
     }
 }

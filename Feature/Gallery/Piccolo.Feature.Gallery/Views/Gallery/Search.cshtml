@@ -1,0 +1,52 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@using Piccolo.Feature.Gallery.Models
+@model IEnumerable<ImageArticle>
+div class="row">
+
+<!-- Gallery Items
+================================================== -->
+<div class="span12 gallery">
+
+    <ul id="filterOptions" class="gallery-cats clearfix">
+        <li class="active"><a href="#" class="all">All</a></li>
+        <li><a href="#" class="illustration">Illustration</a></li>
+        <li><a href="#" class="design">Design</a></li>
+        <li><a href="#" class="video">Video</a></li>
+        <li><a href="#" class="web">Web</a></li>
+    </ul>
+
+    <div class="row clearfix">
+        <ul class="gallery-post-grid holder">
+            @foreach (var article in Model)
+            {
+                <!-- Gallery Item 1 -->
+                <li class="span4 gallery-item" data-id="id-1" data-type="illustration">
+                    <span class="gallery-hover-3col hidden-phone hidden-tablet">
+                    <span class="gallery-icons">
+                        <a href="@article.Image.Src" class="item-zoom-link lightbox" title=@Html.Glass().Editable(article,k=>k.Title) data-rel="prettyPhoto"></a>
+                        <a href="@article.Url" class="item-details-link"></a>
+                    </span>
+                </span>
+                    <a href="@article.Url"><img src="@article.Image.Src" alt="Gallery"></a>
+                    <span class="project-details"><a href="@article.Url">@article.Title</a>@article.SubTitle.Substring(0,20)</span>
+                </li>
+            }
+          
+
+        </ul>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <ul>
+            <li class="active"><a href="#">Prev</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+    </div>
+
+</div><!-- End gallery list-->
+    </div>

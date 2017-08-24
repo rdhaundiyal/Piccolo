@@ -7,9 +7,9 @@
 
 <div class="span12">
     <h5 class="title-bg">
-        Recent Work
-        <small>That we are most proud of</small>
-        <button class="btn btn-mini btn-inverse hidden-phone" type="button">View Portfolio</button>
+        @Model.Title
+        
+        <a href='@Model.CallToAction.Url' class="btn btn-mini btn-inverse hidden-phone">@Html.Glass().Editable(Model,k=>k.CallToAction.Text)</a>
     </h5>
 
     <!-- Gallery Thumbnails
@@ -22,12 +22,12 @@
                 <span class="gallery-hover-4col hidden-phone hidden-tablet">
                     <span class="gallery-icons">
                         <a href='@imageArticle.Image.Src' class="item-zoom-link lightbox" title='&nbsp;@Html.Glass().Editable(imageArticle,k=>k.Title)' data-rel="prettyPhoto"></a>
-                        <a href="gallery-single.htm" class="item-details-link"></a>
+                        <a href='@imageArticle.Url' class="item-details-link"></a>
                     </span>
                 </span>
-                <a href="gallery-single.htm">@Html.Glass().RenderImage(imageArticle,k=>k.ThumbnailImage)</a>
-                <span class="project-details"><a href="gallery-single.htm">@Html.Glass().Editable(imageArticle,k=>k.Title)</a>@Html.Glass().Editable(imageArticle,k=>k.SubTitle.Substring(0,k.SubTitle.IndexOf('.')))</span>
-            </li>   
+                <a href='@imageArticle.Url'>@Html.Glass().RenderImage(imageArticle,k=>k.ThumbnailImage)</a>
+                <span class="project-details"><a href='@imageArticle.Url'>@Html.Glass().Editable(imageArticle, k => k.Title)</a>@Html.Glass().Editable(imageArticle, k => k.SubTitle.Substring(0, k.SubTitle.IndexOf('.')))</span>
+            </li>  
             }
             
            
