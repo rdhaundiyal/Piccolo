@@ -1,0 +1,116 @@
+----item----
+version: 1
+id: {50975D18-0F48-47B5-B3CB-669DB71FB32C}
+database: master
+path: /sitecore/content/Home
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {991E4933-5E20-460D-A3A3-6BF43635CB9E}
+templatekey: Home
+created: 20170722T034341:636362918216900000
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+50
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 582
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{2B99A5F7-3ECD-4E4E-A041-9D1CB9FB0D65}"><p:d /></r><r uid="{BF0B0DBB-DDE6-4639-8531-BA4FB0C3DF16}" p:before="*" s:ds="" s:id="{F4693A79-6148-4FBE-89A5-87D2164AB929}" s:par="" s:ph="main-content" /><r uid="{697E1946-51C6-4CB8-BF29-B9C5FDF73735}" s:ds="{A1882D42-BA6C-490F-BBCC-7CAC6A5925FE}" s:par="" /><r uid="{4A7090AA-0BB4-4118-AE2D-F76FD89F6746}" p:after="*[1=2]" s:ds="{8595982E-6C56-45EF-B25E-9E14B4629D36}" s:id="{EEB09A29-E2D9-448A-BDFA-33A404A66334}" s:par="" s:ph="span12" /></d></r>
+----version----
+language: en
+version: 1
+revision: deb361f5-c2b3-4369-b2e1-2fe9094606b3
+
+----field----
+field: {F736878E-B266-4E11-BD1C-B856FB530180}
+name: Title
+key: title
+content-length: 52
+
+WELCOME TO PICCOLO.
+A BIG THEME IN A SMALL PACKAGE.
+----field----
+field: {F5163CE5-85A4-4795-A22C-C2E54D709D9A}
+name: SubTitle
+key: subtitle
+content-length: 106
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium vulputate magna sit amet blandit.
+----field----
+field: {FB139BDD-34DA-44A9-8D57-BDFC6A5353ED}
+name: Description
+key: description
+content-length: 178
+
+Cras rutrum, massa non blandit convallis, est lacus gravida enim, eu fermentum ligula orci et tortor. In sit amet nisl ac leo pulvinar molestie. Morbi blandit ultricies ultrices.
+----field----
+field: {93DF3310-E9FF-435E-B2A7-BF82E26869C3}
+name: Menu Title
+key: menu title
+content-length: 4
+
+Home
+----field----
+field: {9F577BFD-68FA-406D-9C84-F271D2637DCC}
+name: Show Item In Menu
+key: show item in menu
+content-length: 1
+
+1
+----field----
+field: {F3B1D89A-72DC-4FDD-B845-FFF624CF22C7}
+name: Show Item in Footer Menu
+key: show item in footer menu
+content-length: 1
+
+1
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170722T034341Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+deb361f5-c2b3-4369-b2e1-2fe9094606b3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170823T052604Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

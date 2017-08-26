@@ -31,8 +31,10 @@ namespace Piccolo.Feature.Gallery.Controllers
 
         public ActionResult Search(string searchTerm = "")
         {
+            var rootPath = Sitecore.Context.Database.GetItem("/sitecore/content/Home/Album");
+
             var repository=new ImageArticleRespository();
-            var result = repository.GetArticles(searchTerm);
+            var result = repository.GetArticles(rootPath.ID,searchTerm);
             return View();
         }
     }

@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {415C54C0-2789-41D4-BC65-DF13D8BD27FF}
+database: master
+path: /sitecore/templates/Piccolo/Project/Piccolo/PageTemplates/Home/__Standard Values
+parent: {991E4933-5E20-460D-A3A3-6BF43635CB9E}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {991E4933-5E20-460D-A3A3-6BF43635CB9E}
+templatekey: Home
+created: 20170722T034746:636362920663130000
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 364
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{12A01825-392A-4815-B0A5-CF8F328BC812}"><r id="{406522B4-6293-4E34-B07C-84650B041F29}" ph="main-content" uid="{2B99A5F7-3ECD-4E4E-A041-9D1CB9FB0D65}" /><r id="{FFC66572-B170-4401-B3D6-E79C45885F88}" ph="span8" uid="{697E1946-51C6-4CB8-BF29-B9C5FDF73735}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 65fc4096-2e90-48fc-be96-bd654dcfe541
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170722T034746Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+65fc4096-2e90-48fc-be96-bd654dcfe541
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170722T073601Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

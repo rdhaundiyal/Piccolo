@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {D9F676C2-E17E-4D45-9D32-22DC46501C14}
+database: master
+path: /sitecore/templates/Piccolo/Project/Piccolo/PageTemplates/Image Article/__Standard Values
+parent: {E4E813AB-D173-4109-B521-FFCE0089D183}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {E4E813AB-D173-4109-B521-FFCE0089D183}
+templatekey: Image Article
+created: 20170813T150115:636382332751130000
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 259
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{12A01825-392A-4815-B0A5-CF8F328BC812}"><r id="{2EC33AE7-A876-452D-8A82-831B75428CCD}" ph="main-content" uid="{16C0C758-C371-474A-89E0-7C8E0F3A7752}" /></d></r>
+----version----
+language: en
+version: 1
+revision: e6d1f24d-2679-464c-b7ca-06193507855b
+
+----field----
+field: {FB139BDD-34DA-44A9-8D57-BDFC6A5353ED}
+name: Description
+key: description
+content-length: 433
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.
+----field----
+field: {467623B2-6670-4ED0-9CC7-6E93406858AA}
+name: Call To Action
+key: call to action
+content-length: 56
+
+<link linktype="external" url="http://www.google.com" />
+----field----
+field: {E8ABC4FD-D2C0-4E59-8FC8-62F6E8A96D21}
+name: Client
+key: client
+content-length: 14
+
+John Doe, Inc.
+----field----
+field: {106D8A1F-F3B0-4A75-AD91-80031B2767D1}
+name: Art Director
+key: art director
+content-length: 8
+
+Jane Doe
+----field----
+field: {4269BD1D-4E46-4AE6-987B-582208C7D491}
+name: Designer
+key: designer
+content-length: 9
+
+Jimmy Doe
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170813T150115Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e6d1f24d-2679-464c-b7ca-06193507855b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170822T065005Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

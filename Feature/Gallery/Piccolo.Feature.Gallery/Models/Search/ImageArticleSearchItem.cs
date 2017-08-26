@@ -8,6 +8,7 @@ namespace Piccolo.Feature.Gallery.Models.Search
 {
     public class ImageArticleSearchItem:BaseSearchItem
     {
+
         [IndexField("Title")]
         public string Title { get; set; }
         [IndexField("SubTitle")]

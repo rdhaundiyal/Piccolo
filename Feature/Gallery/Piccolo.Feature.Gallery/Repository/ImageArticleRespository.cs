@@ -7,12 +7,13 @@ using Glass.Mapper.Sc;
 using Piccolo.Feature.Gallery.Models;
 using Piccolo.Feature.Gallery.Models.Search;
 using Sitecore.ContentSearch.Linq;
+using Sitecore.Data;
 
 namespace Piccolo.Feature.Gallery.Repository
 {
     public class ImageArticleRespository
     {
-        public IEnumerable<ImageArticle> GetArticles(string serviceTag="")
+        public IEnumerable<ImageArticle> GetArticles(ID startPath, string serviceTag="")
         {
             using (
                 var context =
@@ -20,6 +21,8 @@ namespace Piccolo.Feature.Gallery.Repository
                         new Sitecore.ContentSearch.SitecoreIndexableItem(Sitecore.Context.Item)))
             {
                 var query = context.GetQueryable<ImageArticleSearchItem>();
+                query = query.Where(k => k.Paths.Contains(startPath));
+                 query = query.Where(k =>string.Equals( k.TemplateName,"image article",StringComparison.InvariantCultureIgnoreCase));
                 if (serviceTag != "" && serviceTag.ToLower() == "all")
                 { query = query.Where(k => k.Services.Contains(serviceTag)); }
               

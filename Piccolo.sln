@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{EBBF10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piccolo.Feature.Search", "Feature\Search\Piccolo.Feature.Search\Piccolo.Feature.Search.csproj", "{B347A3CA-776D-41EC-8196-BDB59F7FD0FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{17517A9A-3C2A-4BE0-B329-D8DA4CA719C0}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Piccolo.Deploy.TDS", "Deploy\Piccolo.Deploy.TDS\Piccolo.Deploy.TDS.scproj", "{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,12 @@ Global
 		{B347A3CA-776D-41EC-8196-BDB59F7FD0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B347A3CA-776D-41EC-8196-BDB59F7FD0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B347A3CA-776D-41EC-8196-BDB59F7FD0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,5 +96,6 @@ Global
 		{D279BF86-3E79-4F65-8C36-53D26A86D3FB} = {82D1D03F-A89D-42FD-9CBB-C5D779D2FC44}
 		{5D1A2188-3243-4924-9DFD-F15C2F11DF04} = {348C706B-1E65-4D50-BB97-B936741587FB}
 		{B347A3CA-776D-41EC-8196-BDB59F7FD0FD} = {EBBF1076-763C-40FF-81BD-16AF8E3F5082}
+		{C9F4C184-A52F-4E4A-9083-53D7DD5A6A66} = {17517A9A-3C2A-4BE0-B329-D8DA4CA719C0}
 	EndGlobalSection
 EndGlobal
