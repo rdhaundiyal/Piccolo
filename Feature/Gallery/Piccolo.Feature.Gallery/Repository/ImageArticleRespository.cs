@@ -22,7 +22,7 @@ namespace Piccolo.Feature.Gallery.Repository
             {
                 var query = context.GetQueryable<ImageArticleSearchItem>();
                 query = query.Where(k => k.Paths.Contains(startPath));
-                 query = query.Where(k =>string.Equals( k.TemplateName,"image article",StringComparison.InvariantCultureIgnoreCase));
+                query = query.Where(k => string.Equals(k.TemplateName, "image article", StringComparison.InvariantCultureIgnoreCase) || string.Equals(k.TemplateName, "picture", StringComparison.InvariantCultureIgnoreCase));
                 if (serviceTag != "" && serviceTag.ToLower() == "all")
                 { query = query.Where(k => k.Services.Contains(serviceTag)); }
               

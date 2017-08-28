@@ -35,7 +35,7 @@ namespace Piccolo.Feature.Gallery.Controllers
 
             var repository=new ImageArticleRespository();
             var result = repository.GetArticles(rootPath.ID,searchTerm);
-            return View();
+            return View(result);
         }
     }
 }
