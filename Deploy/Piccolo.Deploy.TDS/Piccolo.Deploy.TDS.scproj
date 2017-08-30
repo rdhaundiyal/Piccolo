@@ -58,6 +58,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Configuration.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -73,9 +74,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Layouts\Piccolo\Feature.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Layouts\Piccolo\Foundation.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Layouts\Piccolo\Project.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -87,6 +90,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Layouts\Piccolo\Project\Piccolo Web\_Layout.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -102,12 +106,15 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Gallery\Image Detail.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Gallery\ImageListing.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Gallery\Search.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Media.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -115,9 +122,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Media\Carousel.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Navigation.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Page Structure.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -125,9 +134,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Page Structure\Full Width Page.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Piccolo\Page Structure\Home.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -139,9 +150,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Feature.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Foundation.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -157,6 +170,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Base Templates\Article.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Base Templates\Base Bucket Folder.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -164,6 +178,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Base Templates\Base Bucket Folder\__Standard Values.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Base Templates\Base Bucketable Item.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -171,9 +186,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Base Templates\Base Bucketable Item\__Standard Values.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Base Templates\Base.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -181,6 +198,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\Carousel Folder.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\Carousel Item.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -192,6 +210,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\Carousel Item\Carousel Item\Image.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\Carousel Set.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -203,9 +222,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\Carousel Set\Carousel Set\Selected Items.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\Header.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\ImageList.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -217,12 +238,15 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\ImageList\Image List\Call To Action.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\ImageList\Image List\Selected Image.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Content Templates\ImageList\Image List\Title.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -234,12 +258,15 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Album\__Standard Values.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Dynamic Template.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Generic Page Template.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Home.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -247,6 +274,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Home\__Standard Values.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -254,6 +282,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\__Standard Values.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -261,27 +290,35 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Art Director.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Client.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Date.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Designer.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Image.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Purpose.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Services.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\PageTemplates\Image Article\Picture\Thumbnail Image.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -297,6 +334,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates\Configuration\Copyright\Copyright.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates\Configuration\Presentation.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -304,9 +342,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates\Configuration\Presentation\Site Logo.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates\Configuration\Presentation\Tag Line.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates\Menu Item.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -314,9 +354,11 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates\Menu Item\Menu Item.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Piccolo\Project\Piccolo\Setting Templates\Menu Item\Site Search.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
