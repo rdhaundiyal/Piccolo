@@ -33,8 +33,11 @@ namespace Piccolo.Feature.Gallery.Controllers
         {
             var rootPath = Sitecore.Context.Database.GetItem("/sitecore/content/Home/Album");
 
-            var repository=new ImageArticleRespository();
-            var result = repository.GetArticles(rootPath.ID,searchTerm);
+            var repository=new ImageArticleRepository1();
+            var dict = new Dictionary<string, object>();
+            dict.Add("Services","Web");
+            //var result = repository.GetArticles(rootPath.ID,searchTerm);
+            var result = repository.Get(rootPath.ID, dict);
             return View(result);
         }
     }
