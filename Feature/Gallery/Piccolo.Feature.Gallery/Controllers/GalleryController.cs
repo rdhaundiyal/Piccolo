@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Glass.Mapper.Sc;
 using Piccolo.Feature.Gallery.Models;
 using Piccolo.Feature.Gallery.Repository;
+using Piccolo.Foundation.Repository.Interface;
 
 namespace Piccolo.Feature.Gallery.Controllers
 {

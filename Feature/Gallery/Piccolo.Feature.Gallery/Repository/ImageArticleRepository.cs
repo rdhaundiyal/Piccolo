@@ -6,10 +6,11 @@ using Piccolo.Feature.Gallery.Models;
 using Piccolo.Feature.Gallery.Models.Search;
 using System.Linq;
 using System.Linq.Expressions;
+using Piccolo.Foundation.Repository.Base;
 
 namespace Piccolo.Feature.Gallery.Repository
 {
-    public class ImageArticleRepository1 : BaseRepository<ImageArticle, ImageArticleSearchItem>
+    public class ImageArticleRepository : BaseRepository<ImageArticle, ImageArticleSearchItem>
     {
 
 
