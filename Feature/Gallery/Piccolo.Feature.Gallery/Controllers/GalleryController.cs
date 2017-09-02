@@ -11,6 +11,11 @@ namespace Piccolo.Feature.Gallery.Controllers
 {
     public class GalleryController : Controller
     {
+        private IRepository<ImageArticle> _imageArticleRepository;
+        public GalleryController(IRepository<ImageArticle> imageArticleRepository)
+        {
+            _imageArticleRepository = imageArticleRepository;
+        }
         // GET: Gallery
         public ActionResult List()
         {
@@ -33,11 +38,11 @@ namespace Piccolo.Feature.Gallery.Controllers
         {
             var rootPath = Sitecore.Context.Database.GetItem("/sitecore/content/Home/Album");
 
-            var repository=new ImageArticleRepository1();
+          //  var repository=new ImageArticleRepository1();
             var dict = new Dictionary<string, object>();
             dict.Add("Services","Web");
             //var result = repository.GetArticles(rootPath.ID,searchTerm);
-            var result = repository.Get(rootPath.ID, dict);
+            var result = _imageArticleRepository.Get(rootPath.ID, dict);
             return View(result);
         }
     }

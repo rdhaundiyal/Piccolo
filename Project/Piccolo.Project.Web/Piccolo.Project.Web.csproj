@@ -251,7 +251,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Modules\" />
     <Folder Include="Views\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Feature\Gallery\Piccolo.Feature.Gallery\Piccolo.Feature.Gallery.csproj">
+      <Project>{f44b9c9b-d663-4bd0-b70d-2c96b89e9222}</Project>
+      <Name>Piccolo.Feature.Gallery</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
