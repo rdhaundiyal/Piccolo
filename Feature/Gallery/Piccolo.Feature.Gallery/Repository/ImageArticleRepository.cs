@@ -28,8 +28,5 @@ namespace Piccolo.Feature.Gallery.Repository
             return Expression.Lambda<Func<ImageArticleSearchItem,bool>>(finalExpression,param);
             
         }
-
-   
-
     }
 }
