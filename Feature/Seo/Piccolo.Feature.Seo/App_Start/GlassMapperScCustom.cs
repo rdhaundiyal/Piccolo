@@ -5,7 +5,7 @@ using Glass.Mapper.Maps;
 using Glass.Mapper.Sc.IoC;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
-namespace Piccolo.Feature.Gallery.App_Start
+namespace Piccolo.Feature.Seo.App_Start
 {
     public static  class GlassMapperScCustom
     {
