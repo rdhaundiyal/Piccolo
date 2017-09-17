@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piccolo.Feature.Home", "Fea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piccolo.Feature.Seo", "Feature\Seo\Piccolo.Feature.Seo\Piccolo.Feature.Seo.csproj", "{7591CA4A-9A77-43A5-9D9F-118BE8091752}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{E425164E-3A57-4896-999F-8B9A9293289E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piccolo.Foundation.Base", "Foundation\Base\Piccolo.Foundation.Base\Piccolo.Foundation.Base.csproj", "{472D71EE-201F-4503-9221-B7911EB1AD00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +111,10 @@ Global
 		{7591CA4A-9A77-43A5-9D9F-118BE8091752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7591CA4A-9A77-43A5-9D9F-118BE8091752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7591CA4A-9A77-43A5-9D9F-118BE8091752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472D71EE-201F-4503-9221-B7911EB1AD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472D71EE-201F-4503-9221-B7911EB1AD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472D71EE-201F-4503-9221-B7911EB1AD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472D71EE-201F-4503-9221-B7911EB1AD00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,5 +142,7 @@ Global
 		{C8157E73-110E-49D1-9BFB-7B20BC6911F2} = {0E9429EB-EC69-4253-8B48-CC30A0F87FAF}
 		{5C60A278-0A56-4138-939F-CF3AC181AB32} = {C8157E73-110E-49D1-9BFB-7B20BC6911F2}
 		{7591CA4A-9A77-43A5-9D9F-118BE8091752} = {A80B0A25-6306-456A-9D92-413619F1C274}
+		{E425164E-3A57-4896-999F-8B9A9293289E} = {7329F4AC-0F5A-4D65-A50D-4285CFB111B7}
+		{472D71EE-201F-4503-9221-B7911EB1AD00} = {E425164E-3A57-4896-999F-8B9A9293289E}
 	EndGlobalSection
 EndGlobal
