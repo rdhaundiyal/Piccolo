@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,23 +16,17 @@ namespace Piccolo.Feature.Gallery.Repository
 
         public override Expression<Func<ImageArticleSearchItem, bool>> GetCondition(Dictionary<string, object> parameters)
         {
-            ParameterExpression param = Expression.Parameter(typeof(ImageArticleSearchItem), "t");
+            ParameterExpression param = Expression.Parameter(typeof(ImageArticleSearchItem), "k");
            Expression finalExpression = Expression.Constant(true);
            
                  MemberExpression member = Expression.Property(param, "Services");
         ConstantExpression constant = Expression.Constant(parameters["Services"]);
-            //  var  exp=Expression.Equal(member, constant);
-
+          
        var exp=   Expression.Call(member, ContainsMethod, constant);
             
             finalExpression=Expression.AndAlso(finalExpression,exp);
             return Expression.Lambda<Func<ImageArticleSearchItem,bool>>(finalExpression,param);
-                
-        
-           // return k=>k.Image!=null;
+            
         }
-
-   
-
     }
 }
