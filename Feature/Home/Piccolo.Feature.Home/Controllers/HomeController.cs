@@ -1,17 +1,24 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Glass.Mapper.Sc;
+using Piccolo.Feature.Home.Models;
+using Piccolo.Foundation.Base.Controllers;
+using Sitecore.Mvc.Controllers;
 
 namespace Piccolo.Feature.Home.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController :BaseController
     {
-        // GET: Home
-        public ActionResult Index()
+        public new ActionResult Index()
         {
-            return View();
+            var context = new SitecoreContext();
+            var result = context.GetCurrentItem<Article>();
+
+            return View(result);
         }
+
     }
 }
