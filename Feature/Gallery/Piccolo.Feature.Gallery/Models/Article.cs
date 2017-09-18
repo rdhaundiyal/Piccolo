@@ -22,3 +22,4 @@ namespace Piccolo.Feature.Gallery.Models
         public virtual Link CallToAction { get; set; }
     }
 }
+ 
