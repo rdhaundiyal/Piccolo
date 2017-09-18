@@ -1,17 +1,26 @@
-﻿
-@{
-    Layout = null;
+
+@model Piccolo.Feature.Seo.Models.Metadata
+@if (Model == null)
+{
+    return;
+}
+@if (!string.IsNullOrEmpty(Model.Title))
+{
+    <title>@Model.Title</title>
+}
+@if (!string.IsNullOrEmpty(Model.KeywordsList))
+{
+    <meta name="keywords" content="@Model.KeywordsList" />
+}
+@if (!string.IsNullOrEmpty(Model.Description))
+{
+    <meta name="description" content="@Model.Description" />
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>PageMetadata</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
+@if (@Model.CustomMetadata != null)
+{
+foreach (var key in Model.CustomMetadata.AllKeys)
+ {
+     <meta name="@key" content="@Model.CustomMetadata[key]"/>
+ }
+}
