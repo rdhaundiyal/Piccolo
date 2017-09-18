@@ -1,17 +1,38 @@
-﻿
+
+@model Piccolo.Feature.Home.Models.IArticle
+
 @{
     Layout = null;
 }
 
-<!DOCTYPE html>
+<!-- Begin Headline --> <div class="row headline">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
+    <!-- Slider Carousel
+    ================================================== -->
+    @*Carousel*@
+    <div class="span8">
+        @Html.Sitecore().Placeholder("span8")
     </div>
-</body>
-</html>
+
+    <!-- Headline Text
+    ================================================== -->
+    <div class="span4">
+        @*@Html.Sitecore().Placeholder("span8")*@
+        <h3>
+            @Model.Title
+
+        </h3>
+        <p class="lead">@Model.SubTitle</p>
+        <p>@Model.Description</p>
+        <a href="#"><i class="icon-plus-sign"></i>Read More</a>
+    </div>
+</div><!-- End Headline -->
+
+
+
+<div class="row gallery-row">
+    <!-- Begin Gallery Row -->
+    @Html.Sitecore().Placeholder("span12")
+
+
+</div><!-- End Gallery Row -->
