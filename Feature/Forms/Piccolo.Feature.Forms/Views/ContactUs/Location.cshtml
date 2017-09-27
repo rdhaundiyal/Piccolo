@@ -1,5 +1,21 @@
-﻿@{
-    ViewBag.Title = "Location";
-}
+@using Piccolo.Foundation.Base
+@model Piccolo.Feature.Forms.Models.Address 
+<div class="span4 sidebar page-sidebar">
+    <!-- Begin sidebar column -->
+    <h5 class="title-bg">@Helper.GetDictionaryItem("Location")</h5>
+    <address>
+        <strong>Piccolo</strong><br>
+       @Model.AddressFirstLine<br>
+       @Model.City, @Model.Postcode<br>
+        <abbr title="Phone">P:</abbr> @Model.Phone
+    </address>
 
-<h2>Location</h2>
+    <address>
+        <strong>@Model.ContactPersonName</strong><br>
+        <a href="mailto:#">@Model.ContactEmail</a>
+    </address>
+
+    <h5 class="title-bg">@Helper.GetDictionaryItem("Map Us")</h5>
+    <img src="img/location-map.jpg" alt="map">
+
+</div>
