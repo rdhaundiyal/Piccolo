@@ -22,4 +22,3 @@ namespace Piccolo.Feature.Gallery.Models
 
     }
 }
- 
