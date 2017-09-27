@@ -1,5 +1,51 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
+@using Sitecore.Mvc
+@using Piccolo.Foundation.Base
+@model Piccolo.Feature.Forms.Models.Contact
+<div class="row">
+    <!--Container row-->
 
-<h2>Contact</h2>
+    <div class="span8 contact">
+        <!--Begin page content column-->
+
+        <h2>@Model.Title</h2>
+        <p>@Model.Description</p>
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-success">
+           @Model.Message
+        </div>
+    }
+    @using( Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName,FormMethod.Post))
+    {
+        @*<form action="#" id="contact-form">*@
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-user"></i></span>
+             @Html.TextBoxFor(k => k.ContactName, new { @class="span4", id="prependedInput", size="16", placeholder = Helper.GetDictionaryItem("Name") })
+                  @*<input class="span4" id="prependedInput" size="16" type="text" placeholder="@Helper.GetDictionaryItem("Name")">*@
+            </div>
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-envelope"></i></span>
+              @Html.TextBoxFor(k => k.Email, new { @class = "span4", size = "16", placeholder = Helper.GetDictionaryItem("Email") })
+                  @*<input class="span4" id="prependedInput" size="16" type="text" placeholder="@Helper.GetDictionaryItem("Email")">*@
+            </div>
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-globe"></i></span>
+                @Html.TextBoxFor(k => k.Website, new { @class = "span4", size = "16", placeholder = Helper.GetDictionaryItem("Website") })
+                @*<input class="span4" id="prependedInput" size="16" type="text" placeholder="@Helper.GetDictionaryItem("Website")">*@
+            </div>
+          @Html.TextAreaFor(k => k.Email, new { @class = "span6" })    
+        @*<textarea class="span6"></textarea>*@
+            <div class="row">
+                <div class="span2">
+                    <input type="submit" class="btn btn-inverse" value="@Helper.GetDictionaryItem("Button Send Message")">
+                </div>
+            </div>
+        @*</form>*@
+}
+    </div> <!--End page content column-->
+    <!-- Sidebar
+    ================================================== -->
+   @Html.Sitecore().Placeholder("span4")
+    <!-- End sidebar column -->
+
+</div><!-- End container row -->
